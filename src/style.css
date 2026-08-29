@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: azure;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+  color: cornflowerblue;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 20px;
+  color: aqua;
+  transition: color 0.5s ease;
+}
+
+.nav-links a:hover {
+  color: crimson;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 34%,
+    rgba(255, 0, 51, 1) 100%
+  );
+
+  padding: 150px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  animation: fadeInUp 0.8s ease;
+  color: aqua;
+}
+
+.tagline {
+  animation: fadeInUp 1s ease;
+  color: azure;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.hero-buttons {
+  animation: fadeInUp 1.2s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BUTTONS */
+
+.btn {
+  border: 2px solid transparent;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.btn-primary {
+  background: rgb(0, 200, 255);
+  color: rgb(4, 4, 53);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  border: 1px solid rgb(0, 200, 255);
+  color: azure;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid rgb(0, 200, 255);
+  color: azure;
+}
+
+.btn-secondary:hover {
+  background: rgb(0, 200, 255);
+  color: rgb(4, 4, 53);
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+  background-color: black;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+}
+
+.about-section h2 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile-figure img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-text {
+  padding-top: 80px;
+  color: rgb(233, 179, 179);
+  font-size: 25px;
+}
+
+figcaption {
+  color: rgb(236, 181, 181);
+}
+
+/* SKILLS SECTION */
+
+.skills-section {
+  background: black;
+  color: aqua;
+  text-align: center;
+  align-items: center;
+}
+
+.skills-grid {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 450px;
+}
+
+.skill-item {
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.skills-section h2 {
+  font-size: 25px;
+  padding: 25px;
+}
+
+/* PROJECTS SECTION */
+
+.project-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background-color: black;
+}
+
+.project-section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+  color: darkblue;
+}
+
+.project-card {
+  border: 2px solid darkblue;
+  gap: 10px;
+  background-color: darkblue;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.project-card img {
+  height: 300px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.project-card:hover {
+  border: 2px solid darkblue;
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+.project-card h3 {
+  color: rgb(241, 114, 9);
+}
+
+.project-card p {
+  color: bisque;
+}
+
+.project-tags {
+  color: chocolate;
+  margin-bottom: 20px;
+}
+
+.project-card h3:hover {
+  color: rgb(15, 15, 15);
+}
+
+.button {
+  color: rgb(42, 7, 33);
+  text-decoration: none;
+  border: 2px solid darkred;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgb(9, 229, 177);
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+  background: url("/images/blue background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: aqua;
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 300px;
+  padding: 14px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: aqua;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+section {
+  padding: 80px;
+}
+
+#contact-form {
+  max-width: 600px;
+  padding-left: 400px;
+}
+
+#submit {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: aqua;
+  border: none;
+  font-weight: bold;
+}
+
+#submit:hover {
+  background-color: transparent;
+  border: 2px solid aqua;
+  color: white;
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+  border-color: aqua;
+}
+
+.contact-section h2 {
+  color: white;
+  font-size: 30px;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  background-color: black;
+  padding: 60px;
+}
+
+footer p {
+  color: white;
+  font-size: 20px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: cornflowerblue;
+  padding: 10px;
+  border: 1px solid cornflowerblue;
+  border-radius: 9px;
+}
+
+#footer {
+  margin-top: 15px;
+}
+
+/* DARK MODE */
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/* LIGHT MODE */
+
+body.light-theme {
+  background-color: whitesmoke;
+  color: rgb(23, 38, 67);
+}
+
+body.light-theme .navbar {
+  background-color: azure;
+  color: rgb(23, 38, 67);
+}
+
+body.light-theme .logo {
+  color: rgb(4, 92, 92);
+}
+
+body.light-theme .nav-links a {
+  color: rgb(4, 92, 92);
+}
+
+body.light-theme .nav-links a:hover {
+  color: red;
+}
+
+body.light-theme .hero-section {
+  background: linear-gradient(
+    90deg,
+    rgb(191, 239, 246) 0%,
+    rgb(195, 237, 245) 34%,
+    rgb(198, 235, 249) 100%
+  );
+}
+
+body.light-theme .hero-title {
+  color: rgb(4, 92, 92);
+}
+
+body.light-theme .tagline {
+  color: rgb(4, 92, 92);
+}
+
+body.light-theme .btn-primary {
+  background-color: rgb(54, 211, 250);
+  color: rgb(232, 232, 255);
+}
+
+body.light-theme .btn-primary:hover {
+  background-color: transparent;
+  border-color: rgb(54, 211, 250);
+  color: rgb(54, 211, 250);
+}
+
+body.light-theme .btn-secondary {
+  background-color: transparent;
+  border-color: rgb(54, 211, 250);
+  color: rgb(54, 211, 250);
+}
+
+body.light-theme .btn-secondary:hover {
+  background-color: rgb(54, 211, 250);
+  color: rgb(232, 232, 255);
+}
+
+body.light-theme .about-section {
+  background-color: azure;
+}
+
+body.light-theme .about-section h2 {
+  color: rgb(4, 92, 92);
+}
+
+body.light-theme .about-text {
+  color: rgb(4, 92, 92);
+}
+
+body.light-theme figcaption {
+  color: rgb(4, 92, 92);
+}
+
+body.light-theme .skills-section {
+  background-color: rgb(238, 228, 228);
+  color: rgb(4, 92, 92);
+}
+
+body.light-theme .skill-item {
+  background-color: aliceblue;
+  border-color: rgb(54, 211, 250);
+  color: rgb(54, 211, 250);
+}
+
+body.light-theme .project-grid {
+  background-color: azure;
+}
+
+body.light-theme .project-section h2 {
+  color: rgb(4, 92, 92);
+}
+
+body.light-theme .project-card {
+  background-color: azure;
+  border-color: rgb(65, 135, 135);
+}
+
+body.light-theme .project-card:hover {
+  background-color: rgb(214, 241, 241);
+  border-color: rgb(154, 246, 246);
+}
+
+body.light-theme .project-card h3 {
+  color: darkorange;
+}
+
+body.light-theme .project-card p {
+  color: grey;
+}
+
+body.light-theme .project-tags {
+  color: darkred;
+}
+
+body.light-theme .contact-section {
+  background: linear-gradient(
+    90deg,
+    rgb(191, 239, 246) 0%,
+    rgb(195, 237, 245) 34%,
+    rgb(198, 235, 249) 100%
+  );
+}
+
+body.light-theme .form-group label {
+  color: darkcyan;
+}
+
+body.light-theme .form-group input,
+body.light-theme .form-group textarea {
+  background-color: azure;
+  color: darkcyan;
+  border-color: beige;
+}
+
+body.light-theme .form-group input:focus,
+body.light-theme .form-group textarea:focus {
+  border-color: rgb(23, 73, 56);
+}
+
+body.light-theme .form-group input:hover,
+body.light-theme .form-group textarea:hover {
+  border-color: rgb(23, 73, 56);
+}
+
+body.light-theme .contact-section h2 {
+  color: darkcyan;
+}
+
+body.light-theme footer {
+  background-color: azure;
+}
+
+body.light-theme footer p {
+  color: darkcyan;
+}
+
+body.light-theme #footer a {
+  color: darkcyan;
+  border-color: darkcyan;
+}
+
